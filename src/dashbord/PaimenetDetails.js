@@ -14,7 +14,7 @@ const PaimenetDetails = () => {
     const fetchPaymentDetails = async () => {
       try {
         const response = await fetch(
-          `https://oil-shard-ginger.glitch.me//api/paiment/${id}`
+          `https://oil-shard-ginger.glitch.me/api/paiment/${id}`
         );
         if (!response.ok) {
           throw new Error("Failed to fetch payment details");

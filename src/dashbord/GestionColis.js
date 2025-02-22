@@ -13,7 +13,7 @@ const GestionDesColis = () => {
       try {
         const Id = localStorage.getItem("user");
         const response = await fetch(
-          `https://oil-shard-ginger.glitch.me//api/colis/user/${Id}`
+          `https://oil-shard-ginger.glitch.me/api/colis/user/${Id}`
         );
         if (!response.ok) {
           throw new Error("Failed to fetch colis data");
@@ -34,7 +34,7 @@ const GestionDesColis = () => {
   const handleDelete = async (colisId) => {
     try {
       const response = await fetch(
-        `https://oil-shard-ginger.glitch.me//api/colis/${colisId}`,
+        `https://oil-shard-ginger.glitch.me/api/colis/${colisId}`,
         {
           method: "DELETE",
         }

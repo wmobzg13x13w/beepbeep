@@ -108,7 +108,7 @@ const ReportForm = () => {
 
     try {
       const response = await axios.post(
-        "https://oil-shard-ginger.glitch.me//api/reports",
+        "https://oil-shard-ginger.glitch.me/api/reports",
         formData
       );
       console.log("Form submitted successfully:", response.data);

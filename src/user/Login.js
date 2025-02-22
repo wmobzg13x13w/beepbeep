@@ -17,7 +17,7 @@ function Login() {
   const handleLogin = async () => {
     try {
       const response = await axios.post(
-        "https://oil-shard-ginger.glitch.me//api/auth/login",
+        "https://oil-shard-ginger.glitch.me/api/auth/login",
         {
           email,
           password,

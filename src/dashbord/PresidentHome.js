@@ -29,7 +29,7 @@ export default function PresidentHome() {
     const userId = localStorage.getItem("user");
     if (userId) {
       axios
-        .get(`https://oil-shard-ginger.glitch.me//api/stats/user/${userId}`)
+        .get(`https://oil-shard-ginger.glitch.me/api/stats/user/${userId}`)
         .then((response) => {
           if (response.data && response.data.username) {
             setPresidentName(response.data.username);
@@ -41,7 +41,7 @@ export default function PresidentHome() {
 
       // Fetch stats for the user
       axios
-        .get(`https://oil-shard-ginger.glitch.me//api/stats/user/${userId}`)
+        .get(`https://oil-shard-ginger.glitch.me/api/stats/user/${userId}`)
         .then((response) => {
           setStats(response.data);
         })

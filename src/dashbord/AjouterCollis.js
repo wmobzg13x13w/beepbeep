@@ -48,7 +48,7 @@ export default function AjouterCollis() {
 
       // Send a POST request to the backend
       const response = await fetch(
-        `https://oil-shard-ginger.glitch.me//api/colis/${userId}`,
+        `https://oil-shard-ginger.glitch.me/api/colis/${userId}`,
         {
           method: "POST",
           headers: {

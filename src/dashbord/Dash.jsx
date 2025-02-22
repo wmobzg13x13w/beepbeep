@@ -28,7 +28,7 @@ export default function Dashboard() {
 
   useEffect(() => {
     axios
-      .get("https://oil-shard-ginger.glitch.me//api/admin/stats") // Update the endpoint to fetch admin stats
+      .get("https://oil-shard-ginger.glitch.me/api/admin/stats") // Update the endpoint to fetch admin stats
       .then((response) => setStats(response.data))
       .catch((error) => console.error("Error fetching stats:", error));
   }, []);

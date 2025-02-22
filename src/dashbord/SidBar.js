@@ -29,7 +29,7 @@ export default function SidBar() {
       try {
         const id = localStorage.getItem("user");
         const response = await axios.get(
-          `https://oil-shard-ginger.glitch.me//api/users/user/${id}`
+          `https://oil-shard-ginger.glitch.me/api/users/user/${id}`
         );
         console.log(response.data);
 

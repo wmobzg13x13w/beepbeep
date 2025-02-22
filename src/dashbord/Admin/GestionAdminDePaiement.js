@@ -17,7 +17,7 @@ const GestionAdminDePaiement = () => {
     const fetchPayments = async () => {
       try {
         const response = await fetch(
-          `https://oil-shard-ginger.glitch.me//api/paiment/user/${userId}`
+          `https://oil-shard-ginger.glitch.me/api/paiment/user/${userId}`
         );
         if (!response.ok) {
           throw new Error("Failed to fetch payments");

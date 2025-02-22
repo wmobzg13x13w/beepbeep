@@ -29,7 +29,7 @@ const RegisterForm = () => {
     e.preventDefault();
     try {
       const response = await fetch(
-        "https://oil-shard-ginger.glitch.me//api/auth/register",
+        "https://oil-shard-ginger.glitch.me/api/auth/register",
         {
           method: "POST",
           headers: {

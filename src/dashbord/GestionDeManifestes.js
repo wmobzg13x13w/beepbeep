@@ -16,7 +16,7 @@ const GestionDeManifestes = () => {
     const fetchManifests = async () => {
       try {
         const response = await fetch(
-          `https://oil-shard-ginger.glitch.me//api/manifest/user/${userId}`
+          `https://oil-shard-ginger.glitch.me/api/manifest/user/${userId}`
         );
         if (!response.ok) throw new Error("Failed to fetch manifests");
         const data = await response.json();
@@ -34,7 +34,7 @@ const GestionDeManifestes = () => {
   const handleDelete = async (manifestId) => {
     try {
       const response = await fetch(
-        `https://oil-shard-ginger.glitch.me//api/manifests/${manifestId}`,
+        `https://oil-shard-ginger.glitch.me/api/manifests/${manifestId}`,
         {
           method: "DELETE",
         }

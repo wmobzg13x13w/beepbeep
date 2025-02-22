@@ -13,7 +13,7 @@ export default function Navbar() {
       const fetchUser = async () => {
         try {
           const response = await fetch(
-            "https://oil-shard-ginger.glitch.me//api/auth/profile",
+            "https://oil-shard-ginger.glitch.me/api/auth/profile",
             {
               method: "GET",
               headers: {

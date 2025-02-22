@@ -13,7 +13,7 @@ export default function ListBots() {
   const getUsers = async () => {
     try {
       const response = await axios.get(
-        "https://oil-shard-ginger.glitch.me//api/users/users",
+        "https://oil-shard-ginger.glitch.me/api/users/users",
         {
           params: { role: "user" }, // Fetch only users with role "user"
         }

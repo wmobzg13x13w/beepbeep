@@ -13,7 +13,7 @@ const GestionDeRetour = () => {
       try {
         const userId = localStorage.getItem("user");
         const response = await fetch(
-          `https://oil-shard-ginger.glitch.me//api/colis/user/${userId}`
+          `https://oil-shard-ginger.glitch.me/api/colis/user/${userId}`
         );
         if (!response.ok) {
           throw new Error("Failed to fetch colis data");

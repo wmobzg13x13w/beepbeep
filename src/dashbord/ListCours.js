@@ -11,7 +11,7 @@ export default function ListCours() {
   const getCourses = async () => {
     try {
       const response = await axios.get(
-        "https://oil-shard-ginger.glitch.me//api/courses/"
+        "https://oil-shard-ginger.glitch.me/api/courses/"
       );
       setCourses(response.data.data.courses);
     } catch (error) {
@@ -22,7 +22,7 @@ export default function ListCours() {
   const deleteCourse = async (id) => {
     try {
       await axios.delete(
-        `https://oil-shard-ginger.glitch.me//api/courses/${id}`
+        `https://oil-shard-ginger.glitch.me/api/courses/${id}`
       );
       setCourses(courses.filter((course) => course._id !== id));
     } catch (error) {
